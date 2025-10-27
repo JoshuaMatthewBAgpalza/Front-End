@@ -1,54 +1,48 @@
-/* --- Reset --- */
-    * {
+ *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
       height: 100vh;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      background-size: cover;
+      background: linear-gradient(135deg, #2c2c54, #5a4fcf);
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     .login-container {
-      width: 380px;
-      padding: 2.5rem;
-      border-radius: 1.5rem;
-      background: rgba(255, 255, 255, 0.15);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      width: 340px;
+      padding: 40px;
       text-align: center;
       color: #fff;
+      position: relative;
     }
 
     .login-container h2 {
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 1px;
+      font-size: 28px;
+      margin-bottom: 25px;
     }
 
     .input-group {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 15px;
     }
 
     .input-group input {
-      padding: 0.9rem;
-      border-radius: 10px;
+      padding: 12px;
       border: none;
-      outline: none;
+      border-radius: 8px;
       background: rgba(255, 255, 255, 0.2);
       color: #fff;
-      font-size: 1rem;
+      font-size: 15px;
     }
 
     .input-group input::placeholder {
@@ -56,33 +50,55 @@
     }
 
     .btn {
-      margin-top: 1.5rem;
       width: 100%;
-      padding: 0.9rem;
+      margin-top: 20px;
+      padding: 12px;
       border: none;
-      border-radius: 10px;
-      background: #6c63ff;
-      color: white;
-      font-size: 1rem;
+      border-radius: 8px;
+      background: #6a5acd;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
 
     .btn:hover {
-      background: #5848e1;
+      background: #8470ff;
     }
 
     .register-link {
-      margin-top: 1rem;
-      font-size: 0.9rem;
+      margin-top: 15px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
     }
 
     .register-link a {
-      color: #fff;
+      color: #b0a8ff;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: bold;
     }
 
     .register-link a:hover {
       text-decoration: underline;
+    }
+
+    /* Back Button */
+    .back-btn {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
     }
